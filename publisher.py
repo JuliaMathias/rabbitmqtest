@@ -1,6 +1,6 @@
 import pika, os
 
-url = os.environ.get('	amqps://exwotriy:***@gerbil.rmq.cloudamqp.com/exwotriy', 'amqp://guest:guest@localhost:5672/')
+url = os.environ.get('amqps://exwotriy:***@gerbil.rmq.cloudamqp.com/exwotriy', 'amqp://guest:guest@localhost:5672/')
 params = pika.URLParameters(url)
 connection = pika.BlockingConnection(params)
 channel = connection.channel() # start a channel
